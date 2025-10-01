@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('product_name');
             $table->text('category');
             $table->string('description');
-            $table->decimal('price', 8, 2);
+            $table->decimal('product_price', 8, 2);
             $table->decimal('cost_price', 8, 2);
             $table->timestamps();
         });
