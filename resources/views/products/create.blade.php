@@ -20,4 +20,6 @@
     <input type="text" name="cost_price" id="cost_price">
     <br>
 
+    <button type="submit">Create Product</button>
+
 </form>

@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'index'])->name('products.index');
 Route::get('/products/create', [App\Http\Controllers\ProductController::class, 'create'])->name('products.create');
+Route::post('/product', [App\Http\Controllers\ProductController::class, 'store'])->name('products.store');

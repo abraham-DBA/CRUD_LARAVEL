@@ -35,7 +35,15 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $fillable = new Product();
+        $fillable->product_name = $request->input('product_name');
+        $fillable->category = $request->input('category');
+        $fillable->description = $request->input('description');
+        $fillable->price = $request->input('product_price');
+        $fillable->cost_price = $request->input('cost_price');
+        $fillable->save();
+
+        return redirect()->route('products.index');
     }
 
     /**
